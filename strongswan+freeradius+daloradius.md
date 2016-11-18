@@ -11,7 +11,7 @@ Mysql   5.5.52
 - ## strongswan安装配置
 下载strongswan源码  
 
-	wget https://download.strongswan.org/strongswan-5.5.1.tar.gz
+		wget https://download.strongswan.org/strongswan-5.5.1.tar.gz
 
 安装依赖  
 
