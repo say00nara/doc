@@ -299,8 +299,9 @@ IKEv2使用MSCHAPv2进行加密，但FreeRadius默认使用md5，所以需要修
 ### 测试FreeRadius认证
 使用 radtest 命令测试 freeradius 用户认证
 
-    radtest [user] [password] localhost 0 [shared_secret]
-结果返回 Access-Accept 时，说明FreeRadius工作正常
+    radtest [user] [password] localhost 0 [shared_secret]  
+    
+结果返回 Access-Accept 时，说明FreeRadius工作正常  
     
     Sending Access-Request of id 124 to 127.0.0.1 port 1812
     	User-Name = "test"
@@ -308,7 +309,7 @@ IKEv2使用MSCHAPv2进行加密，但FreeRadius默认使用md5，所以需要修
     	NAS-IP-Address = 127.0.1.1
     	NAS-Port = 0
     	Message-Authenticator = 0x00000000000000000000000000000000
-    rad_recv: Access-Accept packet from host 127.0.0.1 port 1812, id=124, length=20
+    rad_recv: Access-Accept packet from host 127.0.0.1 port 1812, id=124, length=20  
     
 ### 测试VPN登录
 #### OS X设置  
