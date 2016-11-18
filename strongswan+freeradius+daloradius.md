@@ -178,14 +178,16 @@ strongswan默认会把日志写到系统日志里，可以通过修改配置：/
 - ## FreeRadius配置  
 安装freeradius和mysql  
 
-    apt-get install freeradius  freeradius-mysql   freeradius-utils  mysql-server
+    apt-get install freeradius  freeradius-mysql   freeradius-utils  mysql-server  
+    
 编辑/etc/freeradius/clients.conf  
 
     client 127.0.0.1 {
         ipaddr = 127.0.0.1  #freeradius服务地址
         secret = 123        #共享密钥
         require_message_authenticator = no
-    }
+    }  
+    
 #### 启用MySQL支持  
 编辑配置文件：/etc/freeradius/radiusd.conf ，取消如下注释。  
 
