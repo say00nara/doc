@@ -341,14 +341,15 @@ IKEv2使用MSCHAPv2进行加密，但FreeRadius默认使用md5，所以需要修
 **测试连接**  
 ![image](http://cfxqd.img48.wal8.com/img48/560823_20161104120158/147823216953.jpeg)
 
-- ## 已知的问题 
+- ## 已知的问题
+
 1.某些版本的php-fpm pear配置不生效导致daloradius登录时报500错误，可以通过phpinfo页面检查php是否已经加载pear，如未加载需在php-fpm目录下的php.ini添加pear配置  
 
     include_path=".:/usr/share/pear"
 
 2.使用5.7版本mysql与daloradius存在兼容性问题（list user页面报错等），但可以通过修改mysql配置部分解决。
 
-3.使用pubkey（纯证书认证）+ikev2模式vpn在os x和ios上无法连接（也可能上我方式的问题，反正我没成功），windows10测试正常。
+3.使用pubkey（纯证书认证）+ikev2模式vpn在os x和ios上无法连接（也可能是我方式的问题，反正我没成功），windows10测试正常。
 
 
 - ## 参考文章  
