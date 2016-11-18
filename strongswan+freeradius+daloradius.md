@@ -297,9 +297,9 @@ IKEv2使用MSCHAPv2进行加密，但FreeRadius默认使用md5，所以需要修
 
 - ## 测试  
 ### 测试FreeRadius认证
-使用 radtest 命令测试 freeradius 用户认证
+使用 radtest 命令测试 freeradius 用户认证  
 
-    radtest [user] [password] localhost 0 [shared_secret]  
+	radtest [user] [password] localhost 0 [shared_secret]  
     
 结果返回 Access-Accept 时，说明FreeRadius工作正常  
     
